@@ -9,7 +9,7 @@ high = 100
 loop = int(input("How many numbers?: "))
 
 #Print the banner.
-print("Your " + str(loop) + " random numbers are:\n") 
+print(f"Your {loop} random numbers are:\n") 
     
 #Determine the frequency.
 r20 = 0
