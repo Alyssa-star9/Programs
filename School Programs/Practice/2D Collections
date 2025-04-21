@@ -1,0 +1,10 @@
+#Practice for 2D Collections and Lists.
+#This program will create a number pad similar to the ones you will see on a phone.
+#Note that this can be done using lists, sets, or tuples.
+
+num_pad = ((1, 2, 3),
+(4, 5, 6),
+(), ())
+
+#Print the number pad.
+for row in num_pad:
