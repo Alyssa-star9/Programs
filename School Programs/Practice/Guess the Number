@@ -16,4 +16,4 @@ def guess(x):
     print(f"Yay, congrats. You have guessed the number {random_number}")
 
 
-guess(10)
+guess(10) #This value can be changed (it is the value for x)
