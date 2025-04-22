@@ -9,13 +9,13 @@ def play():
         return "It is a tie"
     
     #r > s, s > p, p > r
-    if is_win(user, computer):
+    if win(user, computer):
         return "You won!"
     
     return "You lost!" #This can be done using elif is_win(computer, user), but it is just faster to do it like this.
 
 #Define the function for what a win is.
-def is_win(player, opponent):
+def win(player, opponent):
     #return true if player wins
     #r > s, s > p, p > r
     if (((player == "r") and (opponent == "s")) or ((player == "s") and (opponent == "p")) \
