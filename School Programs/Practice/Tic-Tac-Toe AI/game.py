@@ -27,10 +27,10 @@ class TicTacToe:
         return [i for i, spot in enumerate(self.board) if spot == " "] # this is an empty space, and thus an available move
     
     def empty_squares(self):
-        return " " in self.baord
+        return " " in self.board
     
     def num_empty_squares(self):
-        return self.baord.count(" ")
+        return self.board.count(" ")
     
     def make_move(self, square, letter):
         # if invalid move, then make the move (assign square to letter)
