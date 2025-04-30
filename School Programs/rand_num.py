@@ -38,9 +38,12 @@ while asking:
 
     if (low >= high):
         print("\nLowest number must be less than the highest number. Please try again.")
+        continue
+    else:
+        asking = True # All inputs are valid, so we can continue.
 
     # Generate the random numbers.
-    numbers = [random.randint(low, high) for _ in range(count)]
+    numbers = [random.randrange(low, high+1) for _ in range(count)]
     print(f"\nGenerating numbers: {numbers}")
 
     # Determine the average, maximum, and minimum values.
