@@ -40,12 +40,14 @@ while asking:
         print("\nLowest number must be less than the highest number. Please try again.")
 
 # Generate the random numbers.
+    total = 0
     for i in range(count):
         numbers = random.randint(low, high)
+        total += numbers
         print(numbers, end=" ")
 
 # Determine the average, maximum, and minimum values.
-    average = sum(numbers) / count
+    average = total / count
     minimum = min(numbers)
     maximum = max(numbers)
 
