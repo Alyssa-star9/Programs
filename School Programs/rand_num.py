@@ -53,7 +53,7 @@ while asking:
     print(f"The average is: {average:.2f}")
 
     # Ask the user if they want to run the program again.
-    run_again = input("Would you like to run the program again? (y/n): ").lower()
-    if run_again != "y":
-        asking = False
-        print("Thank you. Have a great day!")
+run_again = input("Would you like to run the program again? (y/n): ").lower()
+if run_again != "y":
+    asking = False
+    print("Thank you. Have a great day!")
