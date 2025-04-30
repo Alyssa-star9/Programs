@@ -57,7 +57,7 @@ while asking:
     print(f"The average is: {average:.2f}")
 
     # Ask the user if they want to run the program again.
-    run_again = input("Would you like to run the program again? (y/n): ").lower()
+    run_again = input("\nPlay again? (y/n): ").lower() # .lower() makes the input case senstive to the original values.
     if run_again != "y":
         asking = False
-        print("Thank you. Have a great day!")
+        print("\nThank you. Have a great day!")
