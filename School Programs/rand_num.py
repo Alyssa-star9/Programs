@@ -44,7 +44,7 @@ while asking:
 
     # Generate the random numbers.
     numbers = [random.randrange(low, high+1) for _ in range(count)]
-    print(f"\nGenerating numbers: *{numbers}")
+    print(f"\nGenerating numbers:", *numbers)
 
     # Determine the average, maximum, and minimum values.
     average = sum(numbers) / count
