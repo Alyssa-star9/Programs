@@ -40,24 +40,20 @@ while asking:
         print("\nLowest number must be less than the highest number. Please try again.")
 
 # Generate the random numbers.
-    total = 0
-    for i in range(count):
-        numbers = random.randint(low, high)
-        total += numbers
-        print(numbers, end=" ")
+numbers = [random.randint(low, high) for _ in range(count)]
 
 # Determine the average, maximum, and minimum values.
-    average = total / count
-    minimum = min(numbers)
-    maximum = max(numbers)
+average = sum(numbers) / count
+minimum = min(numbers)
+maximum = max(numbers)
 
 # Print the results.
-    print(f"The lowest number is: {minimum}") 
-    print(f"The highest number is: {maximum}")
-    print(f"The average is: {average:.2f}")
+print(f"The lowest number is: {minimum}") 
+print(f"The highest number is: {maximum}")
+print(f"The average is: {average:.2f}")
 
 # Ask the user if they want to run the program again.
-    run_again = input("Would you like to run the program again? (y/n): ").lower()
-    if run_again != "y":
+run_again = input("Would you like to run the program again? (y/n): ").lower()
+if run_again != "y":
         asking = False
         print("Thank you. Have a great day!")
