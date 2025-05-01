@@ -27,8 +27,7 @@ while asking:
         elif (low >= high):
             print("\nLowest number must be less than the highest number. Please try again.")
             continue
-
-    except ValueError:
+    except:
         print("\nThat was not a valid input. Please enter valid integers.")
         continue
     
