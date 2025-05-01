@@ -1,4 +1,4 @@
-# AD-1051350-rand_num.py
+# AD-1051350-easy_rand_num.py
 #
 # Description: This program asks the user how many random numbers they want to generate,
 #              then generates that many random numbers between a range the user specifies.
