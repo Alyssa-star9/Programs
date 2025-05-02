@@ -42,11 +42,6 @@ elif level == 3:
 else:
     num_range = 12
 
-# Define a function to check if the answer is correct.
-def check_answer(num1, operation, num2, user_answer):
-    correct_answer = eval(f"{num1} {operation} {num2}")
-    return correct_answer == user_answer
-
 # Set default values.
 num_correct = 0
 question_num = 0 
