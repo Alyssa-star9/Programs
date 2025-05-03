@@ -55,7 +55,7 @@ while asking:
             max_num = numbers
 
     # Calculate the average.
-    average = total /count
+    average = total / count
 
     # Print the results.
     print(f"\nThe lowest number is: {min_num}") 
