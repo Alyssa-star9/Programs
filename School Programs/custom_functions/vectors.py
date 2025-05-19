@@ -20,7 +20,7 @@ def vec_sub(A, B):
     return [A[0] - B[0], A[1] - B[1], A[2] - B[2]]
 
 # Custom function for dot product (scalar multiplication)
-def dot_product(A, B):
+def dot_prod(A, B):
     """This function calculates the product of two vectors A and B.
     Args: A, B: lists of three numbers each
     Retruns: A * B as a float
@@ -28,7 +28,7 @@ def dot_product(A, B):
     return (A[0] * B[0]) + (A[1] * B[1]) + (A[2] * B[2])
 
 # Custom function for cross product (cross product)
-def cross_product(A, B):
+def cross_prod(A, B):
     """This function calculates the cross product of two vectors A and B.
     Args: A, B: lists of three numbers each
     Returns: A x B as a list
@@ -60,4 +60,7 @@ while asking:
         print("Invalid input. Please enter numbers.")
 
 # Print the addition, subtraction, dot product, and cross product of the vectors.
-# A for loop will be used to print the results.
+print(f"\nAddition:\t {A} + {B} = {vec_add(A, B)}")
+print(f"Subtraction:\t {A} - {B} = {vec_sub(A, B)}")
+print(f"Scalar Mult:\t {A} . {B} = {dot_prod(A, B)}")
+print(f"Vector Mult:\t {A} x {B} = {cross_prod(A, B)}")
